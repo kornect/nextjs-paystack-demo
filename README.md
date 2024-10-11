@@ -12,3 +12,8 @@ To expose your localhost to the internet, you can use ngrok. Download ngrok from
 ```bash
  ngrok http http://localhost:3000
 ```
+
+
+### Testing
+
+On paystack, use the ngrok URL as your callback URL
