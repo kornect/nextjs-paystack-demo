@@ -8,7 +8,7 @@ export async function initializePayment(email, amount) {
             'https://api.paystack.co/transaction/initialize',
             {
                 email,
-                amount: amount, // Convert to kobo
+                amount: amount * 100, // Convert to kobo
                 callback_url: `${process.env.NEXT_PUBLIC_BASE_URL}/payment-callback`,
             },
             {
